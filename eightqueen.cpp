@@ -53,7 +53,8 @@ bool Solve(Grid<bool>& board, int col) {
 		}
 	}
 	// If no row in this col can solve the problem, then the last
-	// col must be wrong, return false to backtrack.
+	// col must be wrong, return false to backtrack, the previous
+	// col will move to next row.
 	return false;
 }
 
