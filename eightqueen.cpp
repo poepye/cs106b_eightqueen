@@ -35,7 +35,7 @@ void ClearBoard(Grid<bool>& board)
 
 // Solve the 8-Queen col by col recursively
 bool Solve(Grid<bool>& board, int col) {
-	// If the col > board size, solution found
+	// Base case. If the col > board size, solution found
 	if (col >= NUM_BOARD) return true;
 	else {
 		// 
